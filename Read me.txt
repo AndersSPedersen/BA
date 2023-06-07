@@ -1,0 +1,56 @@
+These scene timings are in TR  (not in seconds)
+TR for this fMRI data is 1.5 TR
+
+Merlin Scenes:
+	Total 23 scenes (including 1 Cartoon scene at the start)
+    
+Sherlock Scenes:
+	Total 21 scenes (including 1 Cartoon scene at the start)
+    
+Name of each scene for movie and narration is given in  "SCENE Informations .xlsx"  file
+
+			
+            
+            Regarding the cropping information
+Merlin Movie: start 25.5 seconds end 1528 seconds (matching stimulus file: Merlin.mp4) Sherlock Movie: start 25.5 end 1441 (matching stimulus file: Sherlock.m4v)
+
+You need to discard the initial 25.5 seconds of the fMRI by converting into TR's. 
+
+==========================================================================================================
+				       ##--------Cropping Info------------------
+												  		    |----Cartoon---|-----Stimuli-------|
+## samples-> [2  : 610]    #  Merlin Narration		 (start | 3s  to 28.5s | 29s   till  915s  | ) seconds
+## samples-> [17 : 1019]   #  Merlin Movie     		 (start | 25s to 40s   | 41s   till  1528s | ) seconds
+## samples-> [2  : 720]    #  Sherlock Narration 	 (start | 3s  to 28.5s | 29s   till  1080s | ) seconds
+## samples-> [17 : 960]    #  Sherlock Movie		 (start | 25s to 40s   | 41s   till  1441s | ) seconds
+
+==========================================================================================================
+
+
+
+=========================== AVERAGE   DMN  Timeseries =====================================================
+
+The Folder :   " DMN_AVG_TS " contains all modalities average DMN data computed across different DMN cortex. Details of these cortexes are given in the folder "DMN  Regions". In total, there are 88 regions which are selected out of 92 DMN regions.
+
+These 88 regions are categorized into 11 cortexes, so resultant data files have 11 Channels x (N) timepoints.
+
+Also, these Average timeseries are cropped according to the Cropping Information in the above section. You can work directly on these timeseries.
+===========================================================================================================
+
+
+
+Date: 25th April 2023
+=====================  AVERAGE  DMN  Updated Regions timeseries ===========================================
+The Folder :  " DMN_AVG_TS_Updated_regions " contains all modalities average DMN data computed across different UPDATED DMN cortexes. The details of these cortexes are given in the folder    "DMN Regions/Updated DMN (102) regions/DMN_regions_2nd_list Cortex Indexes.xlsx" 
+Sheet no 2 (extracted) contains all the regions that are included in the DMN.
+There are total 102 DMN regions across 5 cortexes.
+
+These Cortexes are: 
+1- Anterior cingulate and medial prefrontal cortex
+2- Hippocampal formation
+3- Inferior parietal cortex
+4- Lateral Temporal cortex
+5- Posterior cingulate cortex
+
+Also, these Average timeseries are cropped according to the Cropping Information in the above "Cropping Info" section. You can work directly on these timeseries. All subjects have equal number of timespoints for respective modalities (i.e, Movie/Narration)
+===========================================================================================================
